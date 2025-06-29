@@ -108,15 +108,6 @@ const LoginPage: React.FC = () => {
               </Link>
             </p>
           </div>
-
-          {/* Demo Credentials */}
-          <div className="mt-6 p-4 bg-slate-50 rounded-xl">
-            <p className="text-sm text-slate-600 text-center mb-2">Demo credentials:</p>
-            <div className="text-sm text-slate-700 space-y-1">
-              <p><strong>Email:</strong> john@example.com</p>
-              <p><strong>Password:</strong> Any password</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@ import { TrendingUp, Clock, Users } from 'lucide-react';
 import PostCard from '../components/PostCard';
 import { postService } from '../services/postService';
 import { Post } from '../types';
+import { Link } from 'react-router-dom';
 
 const HomePage: React.FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -77,12 +78,12 @@ const HomePage: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">No posts yet</h3>
               <p className="text-slate-600 mb-6">Be the first to share your story with the community.</p>
-              <a
-                href="/create"
+              <Link
+                to="/create"
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl hover:from-blue-600 hover:to-indigo-700 transition-all transform hover:scale-105"
               >
                 Write Your First Post
-              </a>
+              </Link>
             </div>
           </div>
         ) : (
