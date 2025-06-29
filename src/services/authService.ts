@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { User, LoginCredentials, RegisterData } from '../types';
 
-const API = 'http://localhost:5000/User'; // ✅ Change this to match your backend URL
+const API = 'https://blog-system-backend.onrender.com/User'; // ✅ Change this to match your backend URL
 
 export const authService = {
   // LOGIN

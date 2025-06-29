@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { Post, Comment, PostFormInput } from '../types';
 
-const API = 'http://localhost:5000/Post'; 
-const APIC = 'http://localhost:5000/Comment'; 
+const API = 'https://blog-system-backend.onrender.com/Post'; 
+const APIC = 'https://blog-system-backend.onrender.com/Comment'; 
 
 class PostService {
   async getAllPosts(): Promise<Post[]> {
